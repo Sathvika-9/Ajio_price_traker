@@ -3,8 +3,7 @@ from Ajio_price_traker.Ajio_price_traker import get_ajio_product_info
 
 @pytest.mark.parametrize("url", [
     "https://www.ajio.com/performax-zip-front-jacket-with-contrast-piping/p/443004374_white",
-    "https://www.ajio.com/performax-fastdry-active-training-jacket/p/441120188_jetblack",
-    "https://www.ajio.com/invalid-url",  # This URL is invalid and should raise an exception])
+    "https://www.ajio.com/performax-fastdry-active-training-jacket/p/441120188_jetblack"])
 def test_get_ajio_product_info(url):
     """
     Test that get_ajio_product_info returns the expected data and product ID
